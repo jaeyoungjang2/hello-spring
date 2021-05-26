@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 public class MemoryMemberRepositoryTest {
+
+
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
     // class 가 끝날 때 마다 실행
