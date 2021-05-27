@@ -21,7 +21,7 @@ class MemberServiceTest {
     }
 
 
-    // class 가 끝날 때 마다 실행
+    // class 가 끝날 때 마다 실행  11
     @AfterEach
     public void afterEach(){
         memberRepository.clearStore();
