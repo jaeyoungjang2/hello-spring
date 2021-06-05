@@ -49,12 +49,11 @@ public class MemoryMemberRepositoryTest {
 //    public void findById(){
 //        // given
 //        Member member = new Member();
-//        member.setId(1L);
+//        member.setName("FindByID");
 //        repository.save(member);
 //        Member result = repository.findById(1L).get();
-//        System.out.println(result);
 //        Assertions.assertThat(result).isEqualTo(member);
-//
+//        System.out.println(repository.findByName("FindByID").get().getId());
 //    }
 
     @Test

@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
     @GetMapping("hello")
-    public String hello(Model model){
-        model.addAttribute("data","hello!!!");
+    public String hello222(Model model){
+        model.addAttribute("data","hello test!!!");
         return "hello";
     }
 
     @GetMapping("hello-mvc")
-    public String helloMVC(@RequestParam("name") String name, Model model){
-        model.addAttribute("name", name);
+    public String helloMVC(@RequestParam("name1") String name2, Model model){
+        model.addAttribute("name", name2);
         return "hello-template";
     }
 
@@ -36,11 +36,9 @@ public class HelloController {
 
     static class Hello{
         private String name;
-
         public String getName() {
             return name;
         }
-
         public void setName(String name) {
             this.name = name;
         }
