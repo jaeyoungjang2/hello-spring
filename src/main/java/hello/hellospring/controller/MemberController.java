@@ -30,7 +30,7 @@ public class MemberController {
         member.setName(form.getName());
 
         memberService.join(member);
-
+        // 회원 가입이 끝나면 홈 화면으로 보내버리기
         return "redirect:/";
     }
 

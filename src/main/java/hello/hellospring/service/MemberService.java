@@ -31,6 +31,7 @@ public class MemberService {
     }
 
     private void validateDuplicateMember(Member member) {
+        // findByName이 optional type 으로 return 했기 때문에 ifPresent 문법을 사용할 수 있음.
         memberRepository.findByName(member.getName()).
             ifPresent(m -> {
                 throw new IllegalStateException("이미 존재하는 회원입니다.");
