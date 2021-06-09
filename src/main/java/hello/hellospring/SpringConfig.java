@@ -26,11 +26,6 @@ public class SpringConfig {
 //        this.em = em;
 //    }
 
-//    @Bean
-//    public MemberService memberService() {
-//        return new MemberService(memberRepository());
-//    }
-
     @Bean
     public MemberService memberService() {
         return new MemberService(memberRepository);
